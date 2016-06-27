@@ -1,0 +1,17 @@
+{
+  "name": "language-gpp",
+  "version": "0.0.0",
+  "description": "Gpp language for SolidCam",
+  "engines": {
+    "atom": "*"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Milys/language-gpp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Milys/language-gpp/issues"
+  },
+  "license": "Milys"
+}
