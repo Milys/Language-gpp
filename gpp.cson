@@ -1,0 +1,99 @@
+'scopeName': 'source.gpp'
+'name': 'Gpp'
+'fileTypes': ['gpp']
+'patterns': [
+
+  {
+    'comment': 'Find numbers'
+    'match': '\\b(([0-9]+\\.?[0-9]*)|(\\.[0-9]+))\\b'
+    'name': 'constant.numeric.gpp'
+  }
+
+  {
+    'comment': 'Find G code symbols'
+    'match': '\\b[GHMXYZFSIJKRW]\\b'
+    'name': 'keyword.control.gpp'
+  }
+
+  {
+     'comment': 'Highlight global var'
+     'captures':
+      '1':
+        'name': 'storage.modifier.global string.gpp'
+    'match': '\\b(global string|global logical|global integer|global numeric)\\b'
+  }
+
+  {
+     'comment': 'Highlight true or false'
+     'captures':
+      '1':
+        'name': 'storage.modifier.true.gpp'
+    'match': '\\b(true|false)\\b'
+  }
+
+  {
+    'comment': 'Highlight p'
+    'match': '\\b[p]\\b'
+    'name': 'keyword.control.gpp'
+  }
+
+  {
+    'comment': 'Highlight if statment'
+    'captures':
+      '1':
+        'name': 'keyword.control.gpp'
+    'match': '(?<=^|})\\s*(if|else|elseif|endif)\\b'
+  }
+
+  {
+    'comment': 'Highlight for while'
+    'captures':
+      '1':
+        'name': 'keyword.control.gpp'
+    'match': '(?<=^|[\\[{;])\\s*(while|endw)\\b'
+  }
+
+  {
+    'comment': 'Highlight single line with @ procedure'
+    'captures':
+      '1':
+        'name': 'keyword.control.gpp'
+     'match': '(@.*$)\\b'
+  }
+
+  {
+     'comment': 'Highlight call'
+     'captures':
+      '1':
+        'name': 'storage.modifier.true.gpp'
+    'match': '\\b(call)\\b'
+  }
+
+  {
+    'comment': 'Highlight comments after ;'
+    'begin': '\;'
+    'beginCaptures':
+        '0':
+            'name': 'punctuation.definition.string.begin.gpp'
+    'end': '\$'
+    'endCaptures':
+        '0':
+            'name': 'punctuation.definition.string.end.gpp'
+    'name': 'string.quoted.single.gpp'
+  }
+
+
+  {
+      'comment': 'Match rest of text'
+      'match': '\\b([a-zA-Z_$][a-zA-Z_$0-9]*)\\b'
+      'name': 'variable.other.module.gpp'
+  }
+
+  {
+
+        'comment': 'Match rest of text'
+        'match': '\\b([@][a-z_$])\\b'
+        'name': 'variable.other.module.gpp'
+  }
+
+]
