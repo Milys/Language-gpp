@@ -6,7 +6,7 @@
     "atom": "*"
   },
   "dependencies": {},
-  "repository": "https://github.com/Milys/language-gpp",
+  "repository": "https://github.com/Milys/language-gpp.git",
 
   "bugs": {
     "url": "https://github.com/Milys/language-gpp/issues"
