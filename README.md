@@ -5,8 +5,8 @@ This package provides syntax highlighting in atom code editor for the GPP progra
 
 #Recommended Packages
 
-- minimap
-- symbol-tree-view
+- minimap (Preview location of code)
+- symbol-tree-view (Jump to procedure in code)
 - language-linuxcnc-gcode (To open files with Gcode syntax)
 
 
