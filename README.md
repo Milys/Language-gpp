@@ -3,10 +3,11 @@
 This package provides syntax highlighting in atom code editor for the GPP programming language, for SolidCam.
 
 
-#Requirements Packages
+#Recommended Packages
 
 - minimap
 - symbol-tree-view
+- language-linuxcnc-gcode (To open files with Gcode syntax)
 
 
 #Licence
